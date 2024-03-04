@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea {
+    height: 300px;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: 140px;
+   
+}
+.left{
+    height: 100vh;
+    width: 767px;
+    background-color: blueviolet;
+}
+.tasks{
+    height: 100vh;
+    width: 767px;
+    background-color: rgb(126, 8, 25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.task {
+   
+    border-radius: 20px;
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+  
