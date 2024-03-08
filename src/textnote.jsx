@@ -1,12 +1,9 @@
 import React, {useState} from 'react'
-// import {useState,useEffect} from 'react'
 import './textnote.css'
 
 function Textnote() {
     const[inputvalue,setInputvalue]=useState("")
     const[task,setTasks]=useState([])
-
-   
 
     function handleSubmit(e){
      e.preventDefault();
@@ -14,23 +11,17 @@ function Textnote() {
      setInputvalue("")
     }
 
-
-    function closeTask(index){
-        const crossTasks=[...task];
-        crossTasks.splice(index,1);
-        setTasks(crossTasks);
+    function closeTask(index) {
+      const updatedTasks = [...task];
+      updatedTasks.splice(index, 1);
+      setTasks(updatedTasks);
     }
-    // setTasks(task.filter((task,ind=>{
-    //     return Number(e.taget.id)!==ind;
-    // })))
-    
+ 
   return (
     <>
+   
   <div className='main'>
-    <div className='left'>
-
-
-    
+    <div className='left-box'>
    <form onSubmit={handleSubmit}>
             <textarea
           type="text" 
@@ -43,7 +34,7 @@ function Textnote() {
    </form>
   
    </div>
-   <div className='tasks'>
+   <div className='tasks-box'>
       {task.map((task, index)=>{
         return(
         
@@ -58,6 +49,7 @@ function Textnote() {
      })}
       </div>
       
+
 </div>
     </>
    
